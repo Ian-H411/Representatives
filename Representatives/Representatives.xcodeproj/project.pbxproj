@@ -11,6 +11,12 @@
 		252272FB23049A6100D66142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252272F923049A6100D66142 /* Main.storyboard */; };
 		252272FD23049A6200D66142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 252272FC23049A6200D66142 /* Assets.xcassets */; };
 		2522730023049A6200D66142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252272FE23049A6200D66142 /* LaunchScreen.storyboard */; };
+		2522730C23049B0A00D66142 /* RepresentativeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2522730B23049B0A00D66142 /* RepresentativeModel.swift */; };
+		2522730E23049C2E00D66142 /* RepresentativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2522730D23049C2E00D66142 /* RepresentativeController.swift */; };
+		252273102304B51300D66142 /* StateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2522730F2304B51300D66142 /* StateListTableViewController.swift */; };
+		252273122304B5A800D66142 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252273112304B5A800D66142 /* States.swift */; };
+		252273142304B9E500D66142 /* RepresentativeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252273132304B9E500D66142 /* RepresentativeTableViewCell.swift */; };
+		252273162304BA1300D66142 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252273152304BA1300D66142 /* DetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		252272FC23049A6200D66142 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		252272FF23049A6200D66142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2522730123049A6200D66142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2522730B23049B0A00D66142 /* RepresentativeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeModel.swift; sourceTree = "<group>"; };
+		2522730D23049C2E00D66142 /* RepresentativeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeController.swift; sourceTree = "<group>"; };
+		2522730F2304B51300D66142 /* StateListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateListTableViewController.swift; sourceTree = "<group>"; };
+		252273112304B5A800D66142 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
+		252273132304B9E500D66142 /* RepresentativeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeTableViewCell.swift; sourceTree = "<group>"; };
+		252273152304BA1300D66142 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,9 @@
 		2522730823049A7900D66142 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2522730F2304B51300D66142 /* StateListTableViewController.swift */,
+				252273132304B9E500D66142 /* RepresentativeTableViewCell.swift */,
+				252273152304BA1300D66142 /* DetailTableViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -82,6 +97,7 @@
 		2522730923049A7D00D66142 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2522730D23049C2E00D66142 /* RepresentativeController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -89,6 +105,8 @@
 		2522730A23049A7F00D66142 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2522730B23049B0A00D66142 /* RepresentativeModel.swift */,
+				252273112304B5A800D66142 /* States.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -164,6 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				252273162304BA1300D66142 /* DetailTableViewController.swift in Sources */,
+				252273122304B5A800D66142 /* States.swift in Sources */,
+				2522730C23049B0A00D66142 /* RepresentativeModel.swift in Sources */,
+				252273142304B9E500D66142 /* RepresentativeTableViewCell.swift in Sources */,
+				252273102304B51300D66142 /* StateListTableViewController.swift in Sources */,
+				2522730E23049C2E00D66142 /* RepresentativeController.swift in Sources */,
 				252272F623049A6100D66142 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38AN8KZ7HW;
-				INFOPLIST_FILE = Representatives/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Representatives/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38AN8KZ7HW;
-				INFOPLIST_FILE = Representatives/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Representatives/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
